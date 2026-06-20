@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    @apply font-mono antialiased selection:bg-white selection:text-black;
+  }
+}
+
+/* Custom Scrollbar - Monochrome */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+
+/* Notebook styling helpers */
+.border-thin {
+  border: 1px solid #262626;
+}
+.bg-terminal-card {
+  background-color: #000000;
+}
+.hover-terminal:hover {
+  background-color: #171717 !important;
+}
